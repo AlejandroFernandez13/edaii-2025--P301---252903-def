@@ -1,7 +1,7 @@
 SRC_FILES := $(filter-out src/main.c, $(wildcard src/*.c))
 
 compile:
-	gcc -Wall -Wextra -Werror src/main.c $(SRC_FILES) -o main.out
+	gcc -Wall -Wextra -Werror src/main.c src/sample_lib.c src/document.c src/query.c src/index.c src/document_graph.c -o main.out
 	
 r:
 	make compile
