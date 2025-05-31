@@ -45,7 +45,7 @@ void add_link(DocumentGraph *graph, int fromDoc, int toDoc) {
         graph->nodes[fromDoc]->next = NULL;
     }
 
-    // Incrementar la relevancia del documento destino
+    // Incrementar la relevancia del documento destino.
     graph->nodes[toDoc]->indegree++;
 
     // Registrar el enlace desde 'fromDoc' a 'toDoc' en la lista de conexiones
